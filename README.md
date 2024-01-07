@@ -49,5 +49,36 @@ ChatutilsAPI comes with all libraries needed to build from the current branch.
 Install the plugin and put it into your plugins folder, you can install the plugin from [here](https://github.com/ItzLoghotXD/ChatutilsAPI/releases/latest).Implementing Chatutils is quite simple. It requires getting the Chat service from the Bukkit ServiceManager. See the example below:
 
 ```java
+package com.example.plugin;
 
+import me.loghot.chatutilsapi.Utility;
+
+import org.bukkit.command.CommandExecutor;
+import org.bukkit.plugin.java.JavaPlugin;
+import org.bukkit.command.Command;
+import org.bukkit.command.CommandSender;
+import org.bukkit.entity.Player;
+
+public final class Main extends JavaPlugin {
+
+    @Override
+    public void onEnable() {
+        this.getCommand("hello").setExecutor(new HelloCommand());
+    }
+
+    public class HelloCommand implements CommandExecutor {
+
+        @Override
+        public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
+            if (sender instanceof Player) {
+                Player player = (Player) sender;
+                player.sendMessage("Hello, " + player.getName() + "!");
+                return true;
+            } else {
+                Utility.notPlayerError(sender);
+                return false;
+            }
+        }
+    }
+}
 ```
