@@ -1,5 +1,4 @@
-# ChatutilsAPI - Abstraction Library API for Bukkit Plugins
-A Chat Utility Plugin API.
+# ChatutilsAPI - Chat Utility Plugin API for Bukkit Plugins
 
 How to include the API with Maven: 
 ```xml
