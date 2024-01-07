@@ -72,7 +72,7 @@ public final class Main extends JavaPlugin {
         public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
             if (sender instanceof Player) {
                 Player player = (Player) sender;
-                player.sendMessage("Hello, " + player.getName() + "!");
+                Utility.broadcastMessage("Hello, " + player.getName() + "!");
                 return true;
             } else {
                 Utility.notPlayerError(sender);
