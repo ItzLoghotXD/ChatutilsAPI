@@ -51,7 +51,7 @@ Install the plugin and put it into your plugins folder, you can install the plug
 ```java
 package com.example.plugin;
 
-import me.loghot.chatutilsapi.Utility;
+import com.loghot.chatutilsapi.Utility;
 
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.plugin.java.JavaPlugin;
