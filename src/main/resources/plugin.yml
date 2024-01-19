@@ -1,0 +1,9 @@
+name: ChatutilsAPI
+version: '${project.version}'
+main: com.loghot.chatutilsapi.ChatutilsAPI
+api-version: '1.16'
+prefix: ChatUtilsAPI
+load: STARTUP
+authors: [Loghot]
+description: A Chat Utility Plugin API.
+website: chatutils.loghotgamerz.eu.org
