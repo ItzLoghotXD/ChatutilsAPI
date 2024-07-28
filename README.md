@@ -86,6 +86,7 @@ public final class Main extends JavaPlugin {
 # Donations
 
 I work on this plugin with the little amount of free time that I have. Please feel free to donate via Crypto any amount you desire to show your support, and help me stay motivated to keep this project going. Thank You!
+
 Bitcoin (BTC) Address: bc1qgarxwpp4rn3y5h8hwmhc6a5cpwzqqu3p5pun07
 
 Litecoin (LTC) Address: LaHYbGK3ysnGQyC8PNmrFkZu3xvDfFQg14
